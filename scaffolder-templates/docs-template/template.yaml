@@ -25,6 +25,13 @@ spec:
           ui:autofocus: true
           ui:options:
             rows: 5
+        name1:
+          title: Name1
+          type: string
+          description: Unique name1 of the component
+          ui:autofocus: true
+          ui:options:
+            rows: 5
         description:
           title: Description
           type: string
