@@ -2,12 +2,10 @@ apiVersion: backstage.io/v1beta2
 kind: Template
 metadata:
   name: springboot-template
-  title: Spring Boot gRPC Service
-  description: Create a simple microservice using gRPC and Spring Boot Java
+  title: .Net REST API
+  description: Create Simple REST Service With .Net
   tags:
     - recommended
-    - java
-    - grpc
 spec:
   owner: service@example.com
   type: service
@@ -24,9 +22,9 @@ spec:
           type: string
           description: Unique name of the component
         java_package_name:
-          title: Java Package Name
+          title: Targeting .Net Version
           type: string
-          description: Name for the java package. eg (io.backstage.blah)
+          description: Specific Version Which You Need
         description:
           title: Description
           type: string
