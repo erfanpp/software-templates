@@ -2,12 +2,12 @@ apiVersion: backstage.io/v1beta2
 kind: Template
 metadata:
   name: springboot-template
-  title: .Net Simple REST API
-  description: Create a simple microservice using REST and .Net
+  title: Spring Boot gRPC Service
+  description: Create a simple microservice using gRPC and Spring Boot Java
   tags:
     - recommended
-    - c#
-    - .net
+    - java
+    - grpc
 spec:
   owner: service@example.com
   type: service
@@ -17,16 +17,16 @@ spec:
       required:
         - component_id
         - owner
-        - dotnetsdk
+        - java_package_name
       properties:
         component_id:
           title: Name
           type: string
           description: Unique name of the component
-        dotnetsdk:
-          title: Version Of Targeting Framework
+        java_package_name:
+          title: Targeting .Net Version
           type: string
-          description: Version Of Targeting Framework For Your Application
+          description: Specific Version Which You Need
         description:
           title: Description
           type: string
@@ -63,7 +63,7 @@ spec:
           component_id: '{{ parameters.component_id }}'
           description: '{{ parameters.description }}'
           artifact_id: '{{ parameters.component_id }}'
-          java_package_name: '{{ parameters.dotnetsdk }}'
+          java_package_name: '{{ parameters.java_package_name }}'
           owner: '{{ parameters.owner }}'
           destination: '{{ parseRepoUrl parameters.repoUrl }}'
           http_port: 8080
