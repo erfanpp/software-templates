@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1beta2
 kind: Template
 metadata:
   name: dotnet-template
-  title: REST MVC Template
+  title: .Net REST MVC Template
   description: Create a simple service using REST and dotnet MVC
   tags:
     - recommended
