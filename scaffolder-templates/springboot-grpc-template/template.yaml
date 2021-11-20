@@ -6,8 +6,6 @@ metadata:
   description: Create Simple REST Service With .Net
   tags:
     - recommended
-    - C#
-    - REST
 spec:
   owner: service@example.com
   type: service
