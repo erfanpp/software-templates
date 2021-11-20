@@ -63,7 +63,7 @@ spec:
           component_id: '{{ parameters.component_id }}'
           description: '{{ parameters.description }}'
           artifact_id: '{{ parameters.component_id }}'
-          java_package_name: '{{ parameters.dotnetsdk }}'
+          dotnetsdk: '{{ parameters.dotnetsdk }}'
           owner: '{{ parameters.owner }}'
           destination: '{{ parseRepoUrl parameters.repoUrl }}'
           http_port: 8080
