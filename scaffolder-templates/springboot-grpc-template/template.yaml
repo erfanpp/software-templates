@@ -6,8 +6,8 @@ metadata:
   description: Create a simple microservice using REST and .Net
   tags:
     - recommended
-    - C#
-    - .Net
+    - c#
+    - .net
 spec:
   owner: service@example.com
   type: service
@@ -63,7 +63,7 @@ spec:
           component_id: '{{ parameters.component_id }}'
           description: '{{ parameters.description }}'
           artifact_id: '{{ parameters.component_id }}'
-          dotnetsdk: '{{ parameters.dotnetsdk }}'
+          java_package_name: '{{ parameters.dotnetsdk }}'
           owner: '{{ parameters.owner }}'
           destination: '{{ parseRepoUrl parameters.repoUrl }}'
           http_port: 8080
